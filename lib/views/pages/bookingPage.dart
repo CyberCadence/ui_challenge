@@ -28,12 +28,19 @@ class _BookingPageState extends State<BookingPage> {
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('assets/Images/wallp.jpg'),
-                      fit: BoxFit.fitWidth)),child: Column(children: [Row(
-                        children: [
-                          BigText(text: 'Lets Book Your', size: 25,textcolor: Colors.white,),const CircleAvatar(backgroundImage: AssetImage('assets/Images/eth.jpg'),)
-                        ],
-                      )
-                     , BigText(text: 'Flight ✈', size: 25,textcolor: Colors.white,)],),
+                      fit: BoxFit.fitWidth)),child: Padding(
+                        padding: const EdgeInsets.only(left: 35,right: 5,top: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            BigText(text: 'Lets Book Your', size: 25,textcolor: Colors.white,),    const CircleAvatar(radius: 30,
+                              backgroundImage: AssetImage('assets/Images/eth.jpg'),)
+                          ],
+                        )
+                     , BigText(text: 'Flight ✈︎', size: 25,textcolor: Colors.white,)],),
+                      ),
             ),
         BottomWidget(),MiddleWidget()],
         ),
@@ -50,10 +57,10 @@ class MiddleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-            top: 90,
+            top: 120,
             left: 35,
             child: Container(
-              height: 280,
+              height: 260,
               width: 320,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
@@ -87,11 +94,11 @@ class BottomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-     bottom: 5,  
+     bottom: 2,  
      child: Container(width:MediaQuery.of(context).size.width,height:MediaQuery.of(context).size.height/1.8,
        color: Colors.grey.shade100,
        child: Padding(
-         padding: const EdgeInsets.all(8.0),
+         padding: const EdgeInsets.only(left: 10,top: 20),
          child: Column(children: [
         const SizedBox(height: 40,),
           Padding(
@@ -122,8 +129,8 @@ class BottomWidget extends StatelessWidget {
             children: [
              Container(decoration:   BoxDecoration(
                borderRadius: BorderRadius.circular(20),
-               image: const DecorationImage(image: AssetImage('assets/svg/plane.jpg'))),)
-             , Positioned(right: 25,bottom: 10,
+               image: const DecorationImage(image: AssetImage('assets/Images/plane.png'))),)
+             , Positioned(top: 5,left: 5,
                child: Container(  
                  width: 70,height: 22,decoration: BoxDecoration(borderRadius: BorderRadius.circular(20,),
                  color: Colors.black),
