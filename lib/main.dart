@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/views/ReusableWigets.dart';
+import 'package:ui_challenge/views/ReusableWigetsbookingPage.dart';
 import 'package:ui_challenge/views/pages/bookingPage.dart';
 import 'package:ui_challenge/views/pages/landingPage.dart';
 

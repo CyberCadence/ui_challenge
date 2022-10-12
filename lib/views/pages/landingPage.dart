@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/views/ReusableWigets.dart';
+import 'package:ui_challenge/views/ReusableWigetsbookingPage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
